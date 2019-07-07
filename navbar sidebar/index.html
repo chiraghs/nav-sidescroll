@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openslidemenu(){
+            document.getElementById('menua').style.width = "250px";
+            document.getElementById('menua').style.marginLeft = "0px";
+        }
+        function closeslidemenu(){
+            document.getElementById('menua').style.width = "0px";
+            document.getElementById('menua').style.marginLeft = "0px";
+        }
+    </script>
+</head>
+<body>
+        <div class="boxs">
+            </div>
+    <div class="nav">
+        <div class="barmenu">
+        <a href="#" onclick="openslidemenu()"><i class="fas fa-bars"></i></a>
+        </div>
+       
+        <div class="menu" id="menua">
+          <a href="#" onclick="closeslidemenu()"><i class="fas fa-times"></i></a>
+            <li class="item"> 
+                <a href="#" class="btn"><i class="fas fa-user"></i>Profile</a>
+            </li>
+            <li class="item">
+                <a href="#" class="btn"><i class="fas fa-user"></i>About</a>
+            </li>
+            <li class="item" id="Services">
+                <a href="#Services" class="btn"><i class="far fa-address-book"></i>Services</a>
+                <div class="submenu">
+                    <a href="#" >Services1</a>
+                    <a href="#" >Services2</a>
+                    <a href="#" >Services3</a>
+                </div>
+            </li>
+            <li class="item">
+                <a href="#" class="btn"><i class="fas fa-user"></i>Contact</a>
+            </li>
+        </div>
+    </div>
+    
+</body>
+</html>
